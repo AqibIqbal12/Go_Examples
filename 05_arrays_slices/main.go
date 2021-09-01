@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	// Arrays
@@ -13,13 +11,34 @@ func main() {
 	// fruitArr[1] = "Orange"
 
 	// Decalre and assign
-	// fruitArr := [2]string{"Apple", "Orange"}
+	// fruitArr1 := [2]string{"Apple", "Orange"}
+	// fruitArr2 := fruitArr1 //pass by value
 
-	// fmt.Println(fruitArr)
-	// fmt.Println(fruitArr[1])
+	// fmt.Println("fruitArr1", fruitArr1)
+	// fmt.Println("fruitArr2", fruitArr2)
+	// fruitArr2[1] = "cherry"
+	// fmt.Println("=======================")
+	// fmt.Println("fruitArr1", fruitArr1)
+	// fmt.Println("fruitArr2", fruitArr2)
+	//  =================================================
 
-	fruitSlice := []string{"Apple", "Orange", "Grape", "Cherry"}
+	// with pointer
+	// fruitArr1 := [2]string{"Apple", "Orange"}
+	// fruitArr2 := &fruitArr1 //pass by refrence
+	// // fmt.Printf("%T \n", fruitArr2)
 
-	fmt.Println(len(fruitSlice))
-	fmt.Println(fruitSlice[1:3])
+	// fmt.Println("fruitArr1", fruitArr1)
+	// fmt.Println("fruitArr2", fruitArr2)
+	// fruitArr2[1] = "cherry"
+	// fmt.Println("=======================")
+	// fmt.Println("fruitArr1", fruitArr1)
+	// fmt.Println("fruitArr2", fruitArr2)
+
+	// fruitSlice := []string{"Apple", "Orange", "Grape", "Cherry"}
+	// fmt.Println(len(fruitSlice))
+	// fmt.Println(fruitSlice[1:3])
+
+	nums := []int{11, 12}
+	nums = append(nums, 13, 14, 15)
+	fmt.Println(nums)
 }
